@@ -2,9 +2,44 @@ body { background-color: grey;
     font-family: Arial;
     text-align: left;
 }
+
 h2 {color: blue;}
 h1 {color: blue;font-size: 25pt;}
 p { color: white;}
 li { color:white;}
 span {color:yellow;}
 a { color: red;}
+a:hover { color: #FF00FF; }
+a:link {
+    text-decoration: none;
+}
+dt{
+    font-family: Arial;
+    color: white;
+}
+dd{
+    font-family: Arial;
+    color: white;
+}
+P.drop-cap:first-letter {
+    font-size: 150%;
+    float: left;
+
+    alignment: left;
+}
+
+.mirror {
+    display: block;
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    text-align: left;
+}
+
+.mirrors {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1);
+}
+
+span{ display: inline-block; margin:0.5em; font-family: Arial}
+.flip_H{ transform: scale(-1, 1); color:red; }
+.flip_V{ transform: scale(1, -1); color:green; font-family: Arial }
