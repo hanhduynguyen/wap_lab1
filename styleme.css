@@ -1,5 +1,7 @@
 body { background-color: grey;
-    font-family: Arial}
+    font-family: Arial;
+    text-align: left;
+}
 h2 {color: blue;}
 h1 {color: blue;font-size: 25pt;}
 p { color: white;}
