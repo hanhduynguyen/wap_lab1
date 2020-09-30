@@ -1,4 +1,5 @@
-body { background-color: grey;}
+body { background-color: grey;
+    font-family: Arial}
 h2 {color: blue;}
 h1 {color: blue;font-size: 25pt;}
 p { color: white;}
