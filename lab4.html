@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="grid.css" type="text/css" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+    </title>
+    <div class="top">
+         <span class="font20"> Workshop Registration</span>
+
+        <span class="font12">More actions </span>
+        <select name="meal" class="dropdown">
+            <optgroup lable="meal">
+                <option></option>
+            </optgroup>
+        </select>
+
+    </div>
+</head>
+<body>
+
+
+
+
+<form action="lab4.html">
+
+
+    <div class="row">
+        <div class="column"><a href="www.www.com"> Register now while seat are available</a></div>
+        <div class="column"><p> </p></div>
+        <div class="column"><a href="www.www.com"> Lunch</a></div>
+    </div>
+        <div class="row">
+        <div class="column"><lable class="required">First name </lable></div>
+        <div class="column"><input type="text" name="fname" value="" pattern=".{1,}" required></div>
+        <div class="column"><lable>Meal Reference</lable></div>
+        <div class="column">
+            <select name="meal">
+            <optgroup lable="meal">
+                <option>Vetarian</option>
+                <option>Meat</option>
+                <option>Seafood</option>
+            </optgroup>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column"><lable class="required">Last name </lable></div>
+        <div class="column"><input type="text" name="fname" value="" pattern=".{1,}" required></div>
+        <div class="column"><a href="www.com.com">Payment Details</a></lable></div>
+    </div>
+
+
+    <div class="row">
+        <div class="column"><lable>Company/Institution</lable></div>
+        <div class="column"><input type="text" name="company" value=""></div>
+        <div class="column"><lable>Payment Mode</lable></div>
+        <div class="column">
+             <input type="checkbox" name="payment" value="cash" id="cash"/>          <label for="cash"  > Cash        </label> <br>
+             <input type="checkbox" name="payment" value="cheque" id="cheque"/>      <label for="cheque"> Cheque      </label> <br>
+             <input type="checkbox" name="payment" value="Demand Draft" id="draft"/> <label for="draft" > Demand Draft</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column"><lable class="required">Address </lable></div>
+        <div class="column"><textarea  name="address" value=""  rows="5"  pattern=".{1,}" required></textarea></div>
+        <div class="column"><lable>DD/Cheque No</lable></div>
+        <div class="column"><input type="text" name="chequeno" value=""></div>
+    </div>
+
+
+    <div class="row">
+        <div class="column"><lable>City</lable></div>
+        <div class="column"><input type="text" name="city" value="" > </div>
+        <div class="column"><lable>Drawn on (Bank Name)</lable></div>
+        <div class="column"><input type="text" name="drawnat" value="" > </div>
+    </div>
+
+    <div class="row">
+        <div class="column"><lable>State/Province/Region</lable></div>
+        <div class="column">
+        <select name="state">
+            <optgroup lable="state">
+                <option>IA</option>
+                <option>WA</option>
+                <option>CA</option>
+            </optgroup>
+        </select>
+        </div>
+        <div class="column"><lable>Payable at</lable></div>
+        <div class="column"><input type="text" name="payableat" value="" > </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="column"><lable>Country</lable></div>
+        <select name="country">
+            <optgroup lable="country">
+                <option>United State</option>
+                <option>Vietname</option>
+                <option>Thailand</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div class="row">
+        <div class="column"><lable class="required">Email </lable></div>
+        <div class="column"><input type="textarea" name="company" value="" pattern="[a-z0-9._+\-]+@[a-z0-9.\-]+\.[a-z]{2,3}" required> </div>
+    </div>
+
+    <div class="row">
+        <div class="column"><lable class="required">Phone Number </lable></div>
+        <div class="column"><input type="textarea" name="company" value="" required pattern="[+]?[0-9]+"> </div>
+    </div>
+
+    <div class="botton">
+
+        <div class="column"><input type="submit" value="Sumibt"/>
+        <input type="submit" value="Reset"/></div>
+    </div>
+
+</form>
+
+
+</body>
+</html>
+
