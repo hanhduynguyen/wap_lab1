@@ -1,0 +1,61 @@
+.top {
+    background-color: #87CEFA;
+    height: 30px;
+    width: 100%;
+
+}
+.top > h1{
+    font-size: 20px;
+    vertical-align: center;
+}
+.top > h4{
+    font-size: 12px;
+    vertical-align: center;
+}
+.column {
+    float: left;
+    width: 25%;
+
+}
+.font20 {
+    font-weight: bold;
+    font-size: 20pt;
+}
+.botton {
+    display: flex;
+    background-color: #87CEFA;
+    justify-content: center;
+
+}
+.font12 {
+    font-size: 12pt;
+}
+textarea {
+    width:150px;
+}
+select {
+
+    width:150px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    padding-top: 10pt;
+    clear: both;
+}
+
+.required::after {
+    content: " *";
+}
+.dropdown {
+    width: 1px;
+}
+::after {
+    color: red;
+}
+
+
+lable {
+    font-weight: bold;
+}
