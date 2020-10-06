@@ -26,16 +26,20 @@ function select_font() {
 }
 
 function select_animation () {
+    i=0;
     animation = document.getElementById("animation").value;
 }
 
 function start_animation () {
+
+    animation = document.getElementById("animation").value;
+
     if (document.getElementById("turbo").checked)   timer=50;
     else timer=250;
     document.getElementById("start").disabled=true;
     document.getElementById("stop").disabled=false;
 
-     animation = document.getElementById("animation").value;
+    // animation = document.getElementById("animation").value;
     let frames = ANIMATIONS[animation].split("=====\n");
 
         delay=   setInterval(function () {
@@ -67,7 +71,7 @@ function turbo () {
         }
         clearInterval(delay);
 
-        let animation = document.getElementById("animation").value;
+         animation = document.getElementById("animation").value;
         let frames = ANIMATIONS[animation].split("=====\n");
 
         delay = setInterval(function () {
