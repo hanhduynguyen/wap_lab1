@@ -24,7 +24,7 @@ var arrfonts = {
 function select_font() {
     document.getElementById("text-area").style.fontSize = arrfonts[document.getElementById("fontsize").value];
 }
-
+ 
 function select_animation () {
     i=0;
     animation = document.getElementById("animation").value;
