@@ -2,7 +2,7 @@
 window.onload = function ()  {
     document.getElementById("start").onclick=start_animation;
     document.getElementById("stop").onclick=stop_animation;
-  //  document.getElementById("animation").onchange =select_animation;
+    document.getElementById("animation").onchange =select_animation;
     document.getElementById("turbo").onclick=turbo;
     document.getElementById("fontsize").onchange =select_font;
 
@@ -12,6 +12,7 @@ let i=0;
 var delay ;
 var running=false;
 var turbovar=false;
+let animation;
 var arrfonts = {
     "Tiny": "7pt",
     "Small": "10pt",
@@ -24,8 +25,8 @@ function select_font() {
     document.getElementById("text-area").style.fontSize = arrfonts[document.getElementById("fontsize").value];
 }
 
-function checkturbo () {
-
+function select_animation () {
+    animation = document.getElementById("animation").value;
 }
 
 function start_animation () {
@@ -34,7 +35,7 @@ function start_animation () {
     document.getElementById("start").disabled=true;
     document.getElementById("stop").disabled=false;
 
-    let animation = document.getElementById("animation").value;
+     animation = document.getElementById("animation").value;
     let frames = ANIMATIONS[animation].split("=====\n");
 
         delay=   setInterval(function () {
