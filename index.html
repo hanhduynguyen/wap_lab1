@@ -1,34 +1,44 @@
 <!DOCTYPE html>
+<html>
+<!--
+CSE 190 M Lab 7 HTML file
+You should download this file for your lab, but you should not edit its contents.
+-->
 
-<html lang="en">
-    
 <head>
-    
-    <meta charset="UTF-8">
-    <title>Duy Hanh Nguyen</title>
-    
-</head>
-    
-<body>
-    
-<img src="hanh.jpg"  alt="Duy Hanh Nguyen" width="400" >
-<h1> Duy Hanh Nguyen</h1>
-<ul>
-    <li>Html</li>
-    <li>Lab 01: <a href="/wap_lab1/aboutme.html"> About me</a>
-    <li>CSS for Styling</li>
-    <li>CSS for Page Layout: <a href="/wap_lab1/lab3.html"> Lab 3</a></li>
-    <li>HTML5 Forms: <a href="/wap_lab1/lab4.html"> Lab 4</a></li>
-    <li>JS Introduction: <a href="/wap_lab1/lab5_jsintro.html"> Lab 5</a></li>
-    <li>JavaScript for Modern Web Apps</li>
-    <li>JavaScript Programing Environment <a href="/wap_lab1/lab6.html"> Lab 6</a></li>
-    <li>Animation <a href="/wap_lab1/lab7.html"> Lab 7</a></li>
-     <li>Lab 8 <a href="/wap_lab1/lab8.html"> Lab 8</a></li>
-</ul>
-<a href="https://validator.w3.org/check/?url=https://hanhduynguyen.github.io/wap_lab1">
-    <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator"/>
-</a>
+	<title>Maze!</title>
 
- 
+	<!-- provided files; do not modify -->
+	<link href="maze.css" type="text/css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+	<!-- your code -->
+	<script src="maze.js" type="text/javascript"></script>
+</head>
+
+<body>
+<h1>The Amazing Mouse Maze!</h1>
+<h2 id="status">Click the "S" to begin.</h2>
+
+<!-- This part of the page represents the maze -->
+<div id="maze">
+	<div id="start">S</div>
+	<div class="boundary" id="boundary1"></div>
+	<div class="boundary"></div>
+	<div class="boundary"></div>
+	<div class="boundary"></div>
+	<div class="boundary"></div>
+	<div id="end">E</div>
+</div>
+
+<p>
+	The object of this game is to guide the mouse cursor through the start area and get to the end area.  Be sure to avoid the walls:
+</p>
+
+<div class="boundary example"></div>
+
+<p>
+	Good luck!
+</p>
 </body>
 </html>
